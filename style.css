@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(243, 249, 253);
+    font-family: 'Dongle', sans-serif;
+    font-size:large
+}
+
+.heading{
+    color:rgb(122, 187, 240);
+}
+
+.row{
+    width: 100%;
+}
+
+.timer{
+    color:rgb(138, 179, 180);
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid;
+    border-radius: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-play, .fa-redo{
+    color:rgb(122, 187, 240);
+    border: 2px solid transparent;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+
+.fa-play:hover, .fa-redo:hover{
+    color:rgb(122, 187, 240);
+    border: 2px solid rgb(197, 230, 231);
+    transition: 0.2s ease-in;
+}
