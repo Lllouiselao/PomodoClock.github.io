@@ -7,15 +7,14 @@ function temp(){
     document.getElementById("sec").innerHTML = sec;
 }
 
+
 // start tikcing the time
 function start(){
 
     min = 49;
     sec = 59;
-
     document.getElementById("min").innerHTML = min;
     document.getElementById("sec").innerHTML = sec;
-
     // 60000 -> 1min     1000-> 1s 
     // 因为这个setInterval 会等1分钟再excute 所以我们一开始把时间改成 49min
     var min_interval = setInterval(minTimer, 60000);

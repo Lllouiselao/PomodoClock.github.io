@@ -13,7 +13,7 @@ body{
 }
 
 .timer{
-    color:rgb(138, 179, 180);
+    color:rgba(255,255,255,0.2);
     text-align: center;
     width: 20rem;
     height: 20rem;
@@ -22,6 +22,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.timecolor{
+    color:rgb(122, 187, 240);
 }
 
 .fa-play, .fa-redo{
@@ -36,4 +40,28 @@ body{
     color:rgb(122, 187, 240);
     border: 2px solid rgb(197, 230, 231);
     transition: 0.2s ease-in;
+}
+
+circle{
+    fill: none;
+    stroke: rgb(138, 179, 180) ;
+    stroke-width: 10px;
+    stroke-dasharray: 935;
+    stroke-dashoffset: 935;
+    animation: anim 3209s linear  forwards;
+}
+
+svg{
+    
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid;
+    border-radius: 20rem;
+}
+
+@keyframes anim {
+    100%{
+        stroke-dashoffset: 0;
+    }
 }

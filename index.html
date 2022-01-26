@@ -38,30 +38,41 @@
                 <!--using a row and a col to create the time-->
                 <div class="row">
                     <!--min-->
-                    <div class="col-5">
+                    <div class="col-5 timecolor">
                         <h4 id="min"></h4>
                     </div>
                     <!-- : -->
-                    <div class="col-2">
+                    <div class="col-2 timecolor">
                         <h4 id="col">:</h4>
                     </div>
                     <!-- sec-->
-                    <div class="col-5">
+                    <div class="col-5 timecolor">
                         <h4 id="sec"></h4>
                     </div>
                 </div>
+                <svg id = "anima" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                       <linearGradient id="GradientColor">
+                          <stop offset="0%" stop-color="#e91e63" />
+                          <stop offset="100%" stop-color="#673ab7" />
+                       </linearGradient>
+                    </defs>
+                    <circle cx="155" cy="155" r="150" stroke-linecap="round" />
+            </svg>
             </div>
-
-            <!--Pop the success message-->
+            <div></div>
             
+
 
 
             <!-- creating buttons from start and reset-->
             <div class="container d-flex justify-content-center align-content-center my-3">
-                <button class="btn" onclick="start()"><i class="fas fa-play fa-2x"></i></button>
+                <button class="btn" onclick="start()" id="startbtn"><i class="fas fa-play fa-2x"></i></button>
                 <!--so each time click on the start will refresh the time(page)-->
                 <a href="index.html"><i class="fas fa-redo fa-2x"></i></a>
             </div>
+
+
         </div>
     </body>
 </html>
